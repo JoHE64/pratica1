@@ -22,10 +22,12 @@ inserir("clientes", ['nome', 'email', 'telefone'], ["'$nome'", "'$email'", "'$te
 <body>
     <p>Criar Cliente</p>
     <form action="" method="POST">
-        <input type="text" name="nomeCliente"></input>
-        <input type="text" name="emailCliente"></input>
-        <input type="text" name="telefoneCliente"></input>
+        <input type="text" name="nomeCliente" placeholder="Nome Cliente"></input>
+        <input type="text" name="emailCliente" placeholder="Email Cliente"></input>
+        <input type="text" name="telefoneCliente" placeholder="Telefone Cliente"></input>
         <button>Enviar</button>
     </form>
+    <div><a href="readCliente.php">Visualizar Clientes</a></div>
+    <div><a href="chamado.php">Criar chamado</a></div>
 </body>
 </html>

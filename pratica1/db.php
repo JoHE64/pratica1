@@ -29,3 +29,14 @@
         global $conn;
         $conn->query($query);
     }
+
+    function listar(string $table) {
+        $query = "SELECT * FROM $table";
+        global $conn;
+        $resultado = $conn->query($query);
+        $dados = [];
+        while ($row = $resultado->fetch_assoc()) {
+            $dados[] = $row;
+        }
+        return $dados;
+    }

@@ -18,7 +18,7 @@ CREATE TABLE colaboradores (
 CREATE TABLE chamados (
     id INT AUTO_INCREMENT PRIMARY KEY,
     descricao TEXT NOT NULL,
-    criticidade VARCHAR(25),
+    criticidade ENUM('baixa','média','alta'),
     dataAbertura TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     idCliente INT NOT NULL,
     idColaborador INT,

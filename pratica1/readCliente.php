@@ -4,8 +4,8 @@ include 'db.php';
 $query = "SELECT * FROM clientes";
 $resultado = $conn->query($query);
 
-if ($resultado ->num_rows > 0) {
-    echo "<table border='1'>
+if ($resultado->num_rows > 0) {
+    echo "<table border='10'>
         <tr>
             <th> ID </th>
             <th> Nome </th>
@@ -20,8 +20,7 @@ if ($resultado ->num_rows > 0) {
                     <td> {$row['email']} </td>
                     <td> {$row['telefone']} </td>
                     <td>
-                        <a href='updateCliente.php?id={$row['id']}'>Editar</a> |
-                        <a href='deleteCliente.php?id={$row['id']}'>Excluir</a>
+                        <a href='updateCliente.php?id={$row['id']}'>Editar</a> 
                     </td>
                 </tr>";
         }

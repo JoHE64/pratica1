@@ -34,5 +34,6 @@ $row = $resultado -> fetch_assoc();
         <input type="text" name="telefone" value="<?php echo $row['telefone']; ?>" required>
         <button>Enviar</button>
     </form>
+    <a href="cliente.php">Criar Cliente</a>
 </body>
 </html>
